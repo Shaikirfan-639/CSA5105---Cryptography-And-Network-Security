@@ -1,22 +1,48 @@
-# Simple Substitution Cipher - Frequency Analysis
-
-from collections import Counter
+# Simple Substitution Cipher Decryption (Gold-Bug Cipher)
 
 cipher = """53‡‡†305))6*;4826)4‡.)4‡);806*;48†8¶60))85;;]8*;:‡*8†83
 (88)5*†;46(;88*96*?;8)*‡(;485);5*†2:*‡(;4956*2(5*—4)8¶8*
 ;4069285);)6†8)4‡‡;1(‡9;48081;8:8‡1;48†85;4)485†528806*81
 (‡9;48;(88;4(‡?34;48)4‡;161;:188;‡?;"""
 
-# Count frequencies of symbols
-freq = Counter(ch for ch in cipher if not ch.isspace())
+# Substitution table obtained from frequency analysis
+mapping = {
+    '5':'A',
+    '3':'G',
+    '‡':'O',
+    '†':'D',
+    '0':'L',
+    ')':'S',
+    '6':'I',
+    '*':'N',
+    ';':'T',
+    '4':'H',
+    '8':'E',
+    '2':'B',
+    '.':'P',
+    '¶':'V',
+    ']':'C',
+    ':':'R',
+    '(':'F',
+    '?':'Y',
+    '1':'M',
+    '9':'U',
+    '—':'W'
+}
 
-print("Frequency Analysis:")
-for symbol, count in freq.most_common():
-    print(f"{symbol} : {count}")
+plaintext = ""
+
+for ch in cipher:
+    if ch in mapping:
+        plaintext += mapping[ch]
+    else:
+        plaintext += ch
+
+print("Decrypted Message:\n")
+print(plaintext)
 
 
 
 
 
-
-<img width="715" height="781" alt="image" src="https://github.com/user-attachments/assets/b36c4e4f-54b9-44a6-8dc4-84540dbce4fc" />
+<img width="725" height="587" alt="image" src="https://github.com/user-attachments/assets/4bd3336f-d642-46c8-8772-408ef7ae4285" />
