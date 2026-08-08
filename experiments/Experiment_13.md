@@ -69,6 +69,10 @@ recovered_key = (C.dot(P_inv)) % 26
 print("\nRecovered Hill Cipher Key:")
 print(recovered_key)
 
+
+
+<img width="783" height="727" alt="image" src="https://github.com/user-attachments/assets/408b5f09-2ee6-4a34-99db-e6bc4834539f" />
+
 # Test the recovered key
 test_plaintext = "HELP"
 test_ciphertext = encrypt(test_plaintext, recovered_key)
