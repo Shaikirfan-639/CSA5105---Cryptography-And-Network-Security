@@ -1,0 +1,27 @@
+CSA51 - Cryptography and Network Security
+ASSESSMENT TOOL 3 - Debugging & Optimisation Task
+
+Q1. Debugging & Optimization of Symmetric Encryption (DES / 3DES Implementation)
+A. Identify and fix logical and implementation errors in key scheduling and permutation steps.
+B. Optimize the code to reduce execution time for large input datasets (>= 10 MB).
+C. Justify whether replacing DES/3DES with a modern cipher improves both security and performance.
+
+Q2. Performance Analysis of Block Cipher Modes of Operation
+A. Debug incorrect padding and IV handling causing decryption failures.
+B. Refactor the code to minimize redundant computations and memory usage.
+C. Compare and optimize the implementation to determine the most efficient mode for real-time secure communication.
+
+Q3. Debugging RSA Cryptosystem Implementation
+A. Identify issues in prime generation, key generation, and modular exponentiation.
+B. Optimize the algorithm using efficient techniques (e.g., fast exponentiation, Chinese Remainder Theorem).
+C. Evaluate the trade-offs between key size, security, and computational performance.
+
+Q4. Optimization and Security Analysis of Diffie-Hellman Key Exchange
+A. Debug incorrect shared key generation due to improper modular arithmetic.
+B. Optimize exponentiation operations for large prime values.
+C. Extend the program to mitigate man-in-the-middle attacks and evaluate the performance impact.
+
+Q5. Debugging and Enhancing Elliptic Curve Cryptography (ECC) Implementation
+A. Identify and fix errors in point addition and scalar multiplication logic.
+B. Optimize the implementation using efficient algorithms (e.g., double-and-add).
+C. Compare optimized ECC with RSA in computational efficiency and security strength, and justify suitability for resource-constrained environments.
