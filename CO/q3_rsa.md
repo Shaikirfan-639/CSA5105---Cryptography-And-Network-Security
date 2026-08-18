@@ -64,3 +64,11 @@ def rsa_demo():
 
 if __name__ == "__main__":
     rsa_demo()
+
+
+
+
+
+
+
+<img width="1050" height="656" alt="image" src="https://github.com/user-attachments/assets/9649dcdf-0f53-43d1-8173-9e73de4cbcf4" />
